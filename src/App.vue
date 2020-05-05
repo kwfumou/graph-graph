@@ -1,19 +1,22 @@
 <template>
   <div id="app">
+    <myheader></myheader>
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Table />
     <router-view />
     <button class="btn btn-primary">bootstrap</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Table from "./components/Table.vue";
+import myheader from "./components/myheader";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Table,
+    myheader
   }
 };
 </script>
